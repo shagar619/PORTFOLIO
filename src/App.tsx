@@ -1,12 +1,14 @@
+import { Outlet } from 'react-router'
 import './App.css'
-import { Button } from './components/ui/button'
+import HomeLayout from './layout/HomeLayout'
 
 function App() {
 
   return (
     <>
-    <h1>Shagar Ahmed</h1>
-    <Button>Click me</Button>
+      <HomeLayout>
+        <Outlet></Outlet>
+      </HomeLayout>
     </>
   )
 }
